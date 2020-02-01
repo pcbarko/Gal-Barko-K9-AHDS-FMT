@@ -12,6 +12,7 @@ Data:
 Helper Functions:
 
 1. Functions_Microbiome.R
+2. SumarizeFit
 
 To replicate our analysis, execute the R scripts in the following order:
 
