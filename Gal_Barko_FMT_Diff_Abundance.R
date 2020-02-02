@@ -18,6 +18,10 @@ physeq_glom <- readRDS("FMT_physeq_glom.RDS")
 taxa <- read.csv("FMT_taxa_table.csv")
 taxa$gs <- paste(taxa$Genus, taxa$Species, sep = "_")
 
+physeq_glom@sam_data$Group <- as.factor(paste(physeq_glom@sam_data$Treatment_Group, 
+                                              physeq_glom@sam_data$Collection_Time, 
+                                          sep = "_"))
+
 #use DESeq2 to load
 de <- phyloseq_to_deseq2(physeq_glom, ~ Diagnosis)
 
@@ -36,10 +40,6 @@ dge$samples$Donor_ID[dge$samples$Treatment_Group == "Donor"] <-
 #get logCPM values
 
 logCPM <- cpm(dge, log = TRUE, prior.count = 0.5)
-
-glMDSPlot(logCPM, top = nrow(logCPM), labels = rownames(dge$samples),
-          groups = dge$samples[,c("group","DogID","Collection_Time","Donor_ID","Treatment_Group","Group")], folder = "Interactive_plots",
-          html = "MDSclustering_logCPM+TMM")
 
 plotDensities(logCPM, legend = F)
 
