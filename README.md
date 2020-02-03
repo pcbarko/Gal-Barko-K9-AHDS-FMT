@@ -12,11 +12,12 @@ Data:
 Helper Functions:
 
 1. Functions_Microbiome.R
-2. SumarizeFit
+2. SumarizeFit.R
 
 To replicate our analysis, execute the R scripts in the following order:
 
-1. Gal_Barko_FMT_Preprocessing
-2. Gal_Barko_FMT_Diversity
-3. Gal_Barko_FMT_Diff_Abundance
+1. Gal_Barko_FMT_Preprocessing.R
+2. Gal_Barko_FMT_Diversity.R
+3. Gal_Barko_FMT_Diff_Abundance.R
+4. Gal_Barko_FMT_sPLSDA.R
 
