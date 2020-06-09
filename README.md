@@ -3,7 +3,10 @@ Analysis of the effect of fecal microbiota transplantation (FMT) on the fecal mi
 
 This repository contains the data and R code to reproduce the results in the manuscript titled "Characterization of donor microbiota signature following fecal microbiota transplantation in dogs with acute hemorrhagic diarrhea syndrome" and submitted to Animal Microbiome.
 
-The raw sequencing data were deposited in the National Center for Biotechnology Information (NCBI) Short Read Archive (SRA) under the BioProject accession PRJNA629659 with the BioSamples in the range SAMN14785809 to SAMN14785844. For full reproducibility, these data can accessed and preprocessed using the shell script: 
+The raw sequencing data were deposited in the National Center for Biotechnology Information (NCBI) Short Read Archive (SRA) under the BioProject accession PRJNA629659 with the BioSamples in the range SAMN14785809 to SAMN14785844. For full reproducibility, these data can accessed and preprocessed using the following scripts:
+
+1. Q2manifestMaker.pl
+2. Q2script.sh
 
 The demultiplexed, trimmed, and aligned reads, along with sample and taxonomy tbales have been deposited here for convenience.
 
