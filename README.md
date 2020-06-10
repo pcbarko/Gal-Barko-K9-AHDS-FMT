@@ -8,7 +8,7 @@ The raw sequencing data were deposited in the National Center for Biotechnology 
 1. Q2manifestMaker.pl
 2. Q2script.sh
 
-The demultiplexed, trimmed, and aligned reads, along with sample and taxonomy tbales have been deposited here for convenience.
+The demultiplexed, trimmed, and aligned reads, along with sample and taxonomy tables have been deposited here for convenience.
 
 Data:
 
